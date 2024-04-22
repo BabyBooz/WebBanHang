@@ -1,0 +1,11 @@
+CREATE TABLE dbo.Account 
+(id int, user nvarchar(50), password nvarchar(50), isSell int, isAdmin int);
+
+CREATE TABLE dbo.Cart 
+(idUser int, idPro int, quantity int);
+
+CREATE TABLE dbo.category 
+(id int, name nvarchar(50));
+
+CREATE TABLE dbo.Product 
+(id int, price float, name nvarchar(100), quantity int, brand nvarchar(50), image text(2147483647), cateID int, idSeller int);
